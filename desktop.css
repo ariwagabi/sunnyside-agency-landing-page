@@ -1,0 +1,139 @@
+@media (min-width: 1440px)
+{
+  #parent-container {
+    max-width: 1440px;
+  }
+
+  .container {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .mobile-image {
+    display: none !important;
+  }
+
+  .desktop-image {
+    display: block !important;
+  }
+
+  /* Header */
+  #header-item-wrapper {
+    flex-direction: row !important;
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between !important;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+
+  #navlink-container {
+    /* display: block !important; */
+    background-color: transparent !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  li.dp-navlink {
+    color: var(--white);
+  }
+
+  #menu {
+    display: none !important;
+    position: relative;
+  }
+
+  #dp-navbar {
+    display: block !important;
+    width: 30%;
+    margin-left: auto;
+  }
+
+  #dp-navbar-box {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+  }
+
+  li.dp-navlink:nth-child(4) a
+{
+  background-color: var(--white);
+  border-radius: 20px;
+  padding: 10px 24px;
+  font-family: var(--fraunces);
+  font-weight: var(--fraunces-700);
+  color: var(--very-dark-desaturated-blue);
+  text-transform: uppercase;
+}
+
+li.dp-navlink:nth-child(4) a:hover {
+  background-color: lightskyblue;
+  color: var(--white);
+} 
+
+#hero-text {
+  top: 40% !important;
+}
+
+h1 {
+  margin-bottom: 3rem;
+  font-size: 3rem !important;
+}
+
+
+  /* Main */
+  .main-gridbox-item>div {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #audience,
+  #transform {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+  }
+
+  #transform {
+    order: 1 !important;
+  }
+  
+  #egg {
+    order: 2 !important;
+  }
+
+  .textbox-gridbox {
+    text-align: left !important;
+    margin: auto;
+    max-width: 450px;
+  }
+
+/* Testimonial */
+#testimonials {
+  padding-top: 7rem;
+}
+#testimonial-box-wrapper {
+  width: 75%;
+  margin: auto;
+}
+
+#testimonial-gridbox {
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 30px;
+}
+
+
+
+[data-type-gridbox] {
+  width: 50%;
+  margin: auto;
+  display: grid;
+  row-gap: 30px;
+}
+
+  /* Ads */
+#ads-gridbox {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+}
